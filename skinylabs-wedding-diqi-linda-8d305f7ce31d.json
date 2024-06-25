@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "skinylabs-wedding-diqi-linda",
+  "private_key_id": "8d305f7ce31d65208f1dd88c8949850f6734c1d7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3Q5R35rDct4Rl\nkxAp/TSJJDJI+U4VwudE3jPXjQRg3Z5+mikrv4chb3MScxzliq7a0qqcBbX/HkHE\nBJahpMrXpde1n2ZJHydTN04/3xNbomDTUo4300ppSaXLS1IJB6kpJsYPT19x/NB0\nyBxFyv6CuJqsSsOr8Ul2xLHH2yvB3aT0XdZ78NB8GolMiwUyZ2OX/E15D84kJ8nh\nkv3jwpJbJ2OU6x8hBjl6u1NHxGqSSVmhhooZS2ghdRFsRJR2YoVOiclOc4ZZR3/K\nx8jdnyVY+TsJvjCbQCR3VLdADB/q5/SXyW+IlHPFZRyYaKtOatXFSXJhlIzcDrBR\nGLu6ZP2JAgMBAAECggEAAVKwdBnKbeBwdaYAb5PyoGULiIpEHo40/KnHV55hh+rW\nLxHmusZJEq5LtypDHwXW4Nt32Y56FbvfU25+ZWnXZKUg/m5UihvAJvAWSOLo378j\n98h+wcxDUBhhZSWnlkWZ9lf+LGpnapw2yOiFOY6WVF3jvUUA8pmSxhlo1FM20+IG\nKx0W1hVkIg4Y+6dFkRwjgK94Tx3+/u9Etn/dpbtZUy3YuiSUVe2aO6zKAc1XI16r\naixnhRXgMf05CwrYEY1I7QigDKNHN4FvNrTxfa5sAcrw8DyVSPwUAIMtcp8TmgM6\nUlGadgBAPQKV0UnFjADstik0pIa6SmFWXoKW0LSCdQKBgQDf+MQUi8ue2IPEd+YO\n1q9NjwFvH2A5VT4u/3gsnA+1HYxXKE4lQnEbT77QW7NMbQ+YeL815F3AddkVh3fk\nIVKOFm5r/GNgP5moLB06hb7NiPrLncZONu2UPtamg/1oqTXVYkeuzNsCfvj/S0VL\na0s37b6zpwkE2IuVu75S/B3pJQKBgQDReJIM9kAqncbes9FTAeYWnM5oeZ8ZaCIT\nLX9B1SkIOvdZYd3djuM60y6++xORPJcw/zBoTBlHQ8y8MJz3QnHWo+cv0iLEA/Qi\nxD1rZKggaT6NgkhOg6Z7CK3wJI0RpxPiWLZgGSdNGraMeDfgz8V8Nno2eN9wwlFu\nB2wNw2yvlQKBgA/QDW/x6r9dQ/hUCr8Tcy8DoLNKwM1rckd5K+/iWM2Nt4HTy6if\nx0KJX8xwHPmRXZ+DLuTMKb5T067McK9/lseHV+Zx3EZIVz3jV3DxTmZOfH5xtjWB\ndUaZJSh+ex6vi6h0FuGFfxTvB/9mPg80FQxu0Z73dRCNhVVd+vL679WtAoGAbR5+\nFrqBGrIuUv0hYjhvAACXld0lgDq65Xqh/E1qnpr5F1rgFPbGcHJqu5pXyyThLekB\n8pMR6AntsWsxmazHWKTxXfv9mFbm6uWHiVZaLugkadsgh6YVJ6qR0bN4uWVr+lF0\nUANKceQkjHBjy3zwx5Apgg7ddwQDH2pGY7UV/TECgYEAvrJHyY3v52vy/Qx/KMPk\nYvldskv/6aeQVCmAZGi0qq4B2gBZ2QMSJBFPasomu5XTym1cHV1563j9OxxWMh8Z\n/VBXWoWZpssd/Cg/Bfig3gFXdjjAsYN4WgqX9jF6/7xhmL7heC380UP9r78oQABB\ncU+b9n/BRnqaE8UmsvO6Ew0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "spreadsheet@skinylabs-wedding-diqi-linda.iam.gserviceaccount.com",
+  "client_id": "100417067897220598190",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheet%40skinylabs-wedding-diqi-linda.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

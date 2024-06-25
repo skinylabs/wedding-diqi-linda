@@ -1,0 +1,17 @@
+.slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imageWrapper {
+  flex: 0 0 30%; /* Mengatur lebar setiap gambar */
+  margin-right: 10px; /* Memberikan jarak antar gambar */
+  position: relative; /* Memastikan teks legenda berada di atas gambar */
+}
+
+.legend {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
