@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { NoSSR } from "next/no-ssr"; // Import NoSSR from next/no-ssr to prevent SSR
 
