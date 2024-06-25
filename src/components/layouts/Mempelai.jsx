@@ -38,7 +38,7 @@ const MempelaiPage = () => {
               data-aos="flip-right"
             ></Image>{" "}
             <h1
-              className="playfair-display font-semibold text-2xl text-yellow-600"
+              className="playfair-display text-center font-semibold text-2xl text-yellow-600"
               data-aos="fade-right"
             >
               Syahrul Diqi Arfiansyah,S.Geo
@@ -68,7 +68,7 @@ const MempelaiPage = () => {
               data-aos="flip-left"
             ></Image>{" "}
             <h1
-              className="playfair-display font-semibold text-2xl text-yellow-600"
+              className="playfair-display font-semibold text-center text-2xl text-yellow-600"
               data-aos="fade-left"
             >
               Linda Sintawati,S.Geo

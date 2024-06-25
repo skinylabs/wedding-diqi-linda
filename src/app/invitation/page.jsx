@@ -12,7 +12,7 @@ const InvitationPage = () => (
       {" "}
       <Menu />
     </div>
-    <div className="fixed bottom-24 right-0 z-50 ">
+    <div className="fixed bottom-26 right-2 z-50 ">
       <div className="w-8 h-8 rounded-full  bg-yellow-500  text-white flex justify-center items-center">
         <AutoPlayAudio />
       </div>
@@ -36,7 +36,7 @@ const InvitationPage = () => (
       <Komentar />
     </section>
     <div>
-      <p className="w-full text-center poppins-500 py-5 mb-20 bg-orange-100">
+      <p className="w-full text-center poppins-500 py-5 pb-20 bg-orange-100">
         Made with ❤️ by{" "}
         <a href="https://www.instagram.com/skinylabs/" target="_blank">
           Skinylabs
