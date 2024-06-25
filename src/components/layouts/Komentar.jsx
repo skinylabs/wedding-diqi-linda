@@ -1,15 +1,17 @@
-"use client";
-import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const WeddingComments = () => {
   const [name, setName] = useState("");
   const [comment, setComment] = useState("");
-  const [comments, setComments] = useState(() => {
-    // Mengambil komentar dari localStorage saat komponen dimuat pertama kali
+  const [comments, setComments] = useState([]);
+
+  useEffect(() => {
+    // Memuat komentar dari localStorage saat komponen dimuat
     const savedComments = localStorage.getItem("wedding_comments");
-    return savedComments ? JSON.parse(savedComments) : [];
-  });
+    if (savedComments) {
+      setComments(JSON.parse(savedComments));
+    }
+  }, []); // Hanya dijalankan sekali saat komponen dimuat pertama kali
 
   const getMonthName = (monthIndex) => {
     const months = [
@@ -42,21 +44,20 @@ const WeddingComments = () => {
     e.preventDefault();
     const currentTime = new Date();
     const formattedTime = formatDate(currentTime);
-    // Menambahkan komentar baru ke dalam array komentar
     const newComment = { name, comment, time: formattedTime };
     const updatedComments = [...comments, newComment];
     setComments(updatedComments);
-    // Menyimpan komentar ke dalam localStorage
+    // Simpan komentar ke localStorage
     localStorage.setItem("wedding_comments", JSON.stringify(updatedComments));
-    // Reset form setelah komentar ditambahkan
+    // Reset form setelah submit
     setName("");
     setComment("");
   };
 
   const handleReset = () => {
-    // Menghapus semua komentar dari localStorage
+    // Hapus semua komentar dari localStorage
     localStorage.removeItem("wedding_comments");
-    // Mereset state komentar di komponen
+    // Reset state komentar di komponen
     setComments([]);
   };
 
@@ -64,7 +65,7 @@ const WeddingComments = () => {
     <>
       <div className="absolute w-full flex flex-col justify-center items-center z-20 px-5">
         <h1
-          className="w-full  mb-5 text-center playfair-display text-2xl divider divider-neutral"
+          className="w-full mb-5 text-center playfair-display text-2xl divider divider-neutral"
           data-aos="fade-up"
         >
           Sampaikan Sesuatu
@@ -81,7 +82,7 @@ const WeddingComments = () => {
               data-aos="zoom-in-up"
             />
             <textarea
-              placeholder="Tulis apa yang ingin anda sampaikan.."
+              placeholder="Tulis apa yang ingin Anda sampaikan..."
               value={comment}
               onChange={(e) => setComment(e.target.value)}
               className="border border-gray-300 rounded-md p-2"
@@ -98,7 +99,7 @@ const WeddingComments = () => {
           </form>
 
           <div
-            className="max-h-[22rem] overflow-y-auto mt-4 "
+            className="max-h-[22rem] overflow-y-auto mt-4"
             data-aos="zoom-in-down"
           >
             {comments.length === 0 && (
@@ -108,33 +109,23 @@ const WeddingComments = () => {
             {comments.map((c, index) => (
               <div
                 key={index}
-                className="bg-white  rounded-md p-3 mb-2 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+                className="bg-white rounded-md p-3 mb-2 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
               >
                 <p className="font-bold">{c.name}</p>
-
                 <p>{c.comment}</p>
                 <p className="text-xs text-slate-400">{c.time}</p>
               </div>
             ))}
           </div>
 
-          {/* <button
+          {/* Tombol untuk mereset komentar */}
+          <button
             onClick={handleReset}
             className="bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600"
           >
             Reset Komentar
-          </button> */}
+          </button>
         </div>
-      </div>
-      {/* ============================================= */}
-      <div className="relative w-full h-screen overflow-hidden">
-        {/* <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div> */}
-        <Image
-          src="/images/bg.jpg"
-          alt="Home Image"
-          fill
-          style={{ objectFit: "cover" }}
-        />
       </div>
     </>
   );
