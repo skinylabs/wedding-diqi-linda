@@ -9,36 +9,41 @@ const AutoPlayAudio = () => {
   useEffect(() => {
     const audio = audioRef.current;
 
-    // Function to play audio
     const playAudio = () => {
-      audio.play().catch((error) => {
-        console.log("Audio playback failed:", error);
-      });
+      audio
+        .play()
+        .then(() => {
+          console.log("Audio is playing");
+        })
+        .catch((error) => {
+          console.error("Failed to play audio:", error);
+        });
     };
 
-    // Event listener to loop audio
-    const handleEnded = () => {
-      audio.play();
-    };
-
-    // Try to autoplay the audio on mount
     playAudio();
-    audio.addEventListener("ended", handleEnded);
 
     return () => {
-      audio.removeEventListener("ended", handleEnded);
+      audio.pause();
     };
   }, []);
 
   // Function to toggle play/pause
   const togglePlayPause = () => {
     const audio = audioRef.current;
-    if (isPlaying) {
-      audio.pause();
+
+    if (audio.paused) {
+      audio
+        .play()
+        .then(() => {
+          setIsPlaying(true);
+        })
+        .catch((error) => {
+          console.error("Failed to play audio:", error);
+        });
     } else {
-      audio.play();
+      audio.pause();
+      setIsPlaying(false);
     }
-    setIsPlaying(!isPlaying);
   };
 
   return (
