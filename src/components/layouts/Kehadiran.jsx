@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -134,8 +133,8 @@ const KehadiranPage = () => {
         <Image
           src="/images/bg-4.jpg"
           alt="Home Image"
-          fill
-          style={{ objectFit: "cover" }}
+          layout="fill"
+          objectFit="cover"
         />
       </div>
     </>
