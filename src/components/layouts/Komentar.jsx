@@ -123,12 +123,12 @@ const WeddingComments = () => {
           </div>
 
           {/* Tombol untuk mereset komentar */}
-          {/* <button
+          <button
             onClick={handleReset}
             className="bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600"
           >
             Reset Komentar
-          </button> */}
+          </button>
         </div>
       </div>
       {/* ============================================= */}
