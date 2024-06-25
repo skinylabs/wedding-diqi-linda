@@ -43,7 +43,7 @@ const AutoPlayAudio = () => {
 
   return (
     <div className="absolute flex z-50">
-      <audio ref={audioRef} src="public/audio/audio.mp3" loop={false} />
+      <audio ref={audioRef} src="/audio/audio.mp3" loop={false} />
       <button onClick={togglePlayPause}>
         {isPlaying ? <FaPause /> : <FaPlay />}
       </button>
