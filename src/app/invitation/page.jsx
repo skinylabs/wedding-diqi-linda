@@ -29,9 +29,9 @@ const InvitationPage = () => (
     <section id="gallery">
       <Gallery />
     </section>
-    {/* <section id="kehadiran">
+    <section id="kehadiran">
       <Kehadiran />
-    </section> */}
+    </section>
     <section id="comment">
       <Komentar />
     </section>
