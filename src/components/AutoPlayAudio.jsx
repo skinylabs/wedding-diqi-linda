@@ -50,7 +50,7 @@ const AutoPlayAudio = () => {
     <div className="absolute flex z-50">
       <audio
         ref={audioRef}
-        src="https://wedding-of-diqi-linda.vercel.app//public/audio/audio.MP3"
+        src="https://wedding-of-diqi-linda.vercel.app/public/audio/audio.MP3"
         loop={false}
       />
       <button onClick={togglePlayPause}>
